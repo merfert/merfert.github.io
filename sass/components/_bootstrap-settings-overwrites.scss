@@ -1,0 +1,200 @@
+
+// base colors
+$black:                         #4D4C57 !default;
+$white:                         #ffffff !default;
+$white-light:                   rgba($white, .15) !default;
+$white-dark:                    rgba($white, .3) !default;
+
+$gray-base:                     $black !default;
+
+$gray-dark:                     rgba($black, .4) !default;
+$gray-light:                    rgba($black, .1) !default;
+
+$gray-dark-text:        		rgba($black,.7) !default;
+$gray-light-text:       		rgba($black,.6) !default;
+
+$gray-darker:                   $gray-dark !default;
+$gray-darkest:                  $gray-dark !default;
+
+//***** THIS colors should be removed later *******************
+
+$sentido-blue-900: 		        #08B3D9 !default;
+$sentido-blue-100: 		        #E8F1F5 !default;
+$gray-lightest:                 #ededed !default;
+
+// SUNPRIME
+// grays
+$gray-100:                      $gray-light !default;
+$gray-200:                      $gray-light !default;
+$gray-300:                      $gray-light !default;
+$gray-400:                      $gray-light !default;
+$gray-500:                      $gray-light !default;
+$gray-600:                      $gray-light !default;
+$gray-700:                      $gray-dark !default;
+$gray-800:                      $gray-dark !default;
+$gray-900:                      $gray-dark !default;
+// END THIS ***************************************************
+
+// primary colors
+$brand-primary:       	        $black !default;
+$brand-primary-dark:            $black !default;
+
+$brand-primary-light:           $black !default;
+$brand-primary-lighter:         $black !default;
+
+// secondary colors
+$brand-secondary:               #73ABB3 !default;
+$brand-secondary-dark:          darken($brand-secondary, 10%) !default;
+$brand-secondary-light:         lighten($brand-secondary, 10%) !default;
+
+// tertiary colors
+$brand-tertiary:                $brand-secondary !default;
+
+// accent colors
+$accent-1:                      #678F84 !default;
+$accent-2:                      #EAA94E !default;
+$accent-3:                      #AC5594 !default;
+$accent-4:                      $brand-secondary !default;
+
+$accent-1-light:                #F4F5DB !default;
+$accent-2-light:                #FAF5E4 !default;
+$accent-3-light:                #F6EDF4 !default;
+$accent-4-light:                #F1F6F7 !default;
+
+$brand-success:                 $accent-1 !default;
+$brand-info:                    $accent-4 !default;
+$brand-warning:                 $accent-2 !default;
+$brand-danger:                  $accent-3 !default;
+
+// mapping to new color variables
+$primary:      	$brand-primary !default;
+$secondary:    	$brand-secondary !default;
+$success:      	$brand-success !default;
+$info:         	$brand-info !default;
+$warning:      	$brand-warning !default;
+$danger:       	$brand-danger !default;
+$accent1:		$accent-1 !default;
+$accent2:		$accent-2 !default;
+$accent3:		$accent-3 !default;
+$accent4:		$accent-4 !default;
+
+$theme-colors: () !default;
+$theme-colors: map-merge((
+        "primary":      $brand-primary,
+        "secondary":    $brand-secondary,
+        "success":      $brand-success,
+        "info":         $brand-info,
+        "warning":      $brand-warning,
+        "danger":       $brand-danger,
+        "light":        $gray-light,
+        "dark":         $gray-dark
+), $theme-colors);
+
+// text shadows
+$text-shadow-0:                 2px 2px 5px rgba($black, .5) !default;
+$text-shadow-1:                 0 2px 6px rgba(0, 0, 0, .7) !default;
+
+//global
+$spacer:                    	1rem !default;
+$body-bg:                       $white !default;
+$text-color:                    rgba(127, 137, 171, .95) !default;
+$link-color:                    $brand-primary !default;
+$link-hover-color:              lighten($link-color, 10%) !default;
+
+// Fonts
+$font-family-regular:	        'AvenirLTPro-Book', sans-serif !default;
+$link-font-family:		        $font-family-regular !default;
+$font-family-base:              $font-family-regular !default;
+$font-family-copytext:          $font-family-regular !default;
+$font-family-sans-serif:        $font-family-regular !default;
+$font-family-italic:	        $font-family-regular !default;
+$font-family-accent:	        'AvenirNextLTPro-DemiCn', sans-serif !default;
+$headings-font-family:          $font-family-regular !default;
+
+//bold
+$font-family-bold:		        'AvenirLTPro-Black', sans-serif !default;
+$font-family-semibold:	        $font-family-bold !default;
+$font-family-extrabold:	        $font-family-bold !default;
+
+$font-size-base:	            16px !default;
+$font-size-large:         		ceil(($font-size-base * 1.25)) !default; // ~20px
+$font-size-small:         		ceil(($font-size-base * 0.85)) !default; // ~14px
+
+$font-size-h1:            		48px !default;
+$font-size-h2:            		36px !default;
+$font-size-h3:            		24px !default;
+$font-size-h4:            		20px !default;
+$font-size-h5:            		$font-size-base !default;
+$font-size-h6:            		14px !default;
+
+// Font, line-height, and color for body text, headings, and more.
+$font-size-base:              $font-size-base !default; // Assumes the browser default, typically `16px`
+$font-size-lg:                $font-size-large !default;  // 20px
+$font-size-sm:                $font-size-small !default;  // 14px
+$font-size-caption:           ($font-size-base * .75) !default;   // 12px
+
+$font-weight-light:           normal !default;
+$font-weight-normal:          normal !default;
+$font-weight-bold:            700 !default;
+
+$font-weight-base:            $font-weight-normal !default;
+
+//** By default, this inherits from the `<body>`.
+$headings-font-family:    $font-family-bold !default;
+$headings-font-weight:    normal !default;
+$headings-line-height:    1.1 !default;
+$headings-color:          $brand-primary !default;
+
+// Calculate REM value by dividing px value with browser default 16px
+$h1-font-size:                $font-size-h1 !default;
+$h2-font-size:                $font-size-h2 !default;
+$h3-font-size:                $font-size-h3 !default;
+$h4-font-size:                $font-size-h4 !default;
+$h5-font-size:                $font-size-h5 !default;
+$h6-font-size:                $font-size-h6 !default;
+
+// Proxy variables for font style mixins and text component
+$typo-font-regular:           $font-family-base !default;
+$typo-font-bold:              $font-family-bold !default;
+$typo-font-accent:            $font-family-accent !default;
+$typo-font-weight-regular:    $font-weight-normal !default;
+$typo-font-weight-bold:       $font-weight-bold !default;
+$typo-font-weight-accent:     $font-weight-normal !default;
+
+
+// Font sizes for font style mixins and text component
+$small-font-size:             11px !default;
+$caption-font-size:           12px !default;
+$body-font-size:              14px !default;
+$subheader-font-size:         $h5-font-size !default;
+$title-font-size:             $h4-font-size !default;
+$headline-font-size:          $h3-font-size !default;
+$display-font-size:           $h2-font-size !default;
+$jumbo-font-size:             $h1-font-size !default;
+$mega-font-size:              72px !default;
+
+// Font line-height for font style mixins and text component
+$small-font-line-height:             16px !default;
+$caption-font-line-height:           18px !default;
+$body-font-line-height:              22px !default;
+$subheader-font-line-height:         27px !default;
+$title-font-line-height:             32px !default;
+$headline-font-line-height:          33px !default;
+$display-font-line-height:           44px !default;
+$jumbo-font-line-height:             60px !default;
+$mega-font-line-height:              96px !default;
+
+
+$headings-margin-bottom:      ($spacer / 2) !default;
+$headings-font-weight-light:  300 !default;
+
+$display1-size:               6rem !default;
+$display2-size:               5.5rem !default;
+$display3-size:               5rem !default;
+$display4-size:               $mega-font-size !default;
+
+$display1-weight:             $font-weight-normal !default;
+$display2-weight:             $font-weight-normal !default;
+$display3-weight:             $font-weight-normal !default;
+$display4-weight:             $font-weight-normal !default;
+

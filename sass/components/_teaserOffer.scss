@@ -1,0 +1,78 @@
+.teaserOffer {
+
+}
+
+.teaserOffer--container {
+
+}
+
+.teaserOffer--containerInner {
+	padding: 50px 0;
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teaserOffer--item {
+	padding: 10px;
+	@media (min-width: 767px) {
+		width: 50%;		
+	}
+	@media (min-width: 989px) {
+		width: 33%;		
+	}
+}
+
+.teaserOffer--itemContainer {
+	background: $white;
+}
+
+.teaserOffer--imageContainer {
+	position: relative;
+}
+
+.teaserOffer--image {
+	width: 100%;
+}
+
+// IMPORANT:
+// Badge position needs to be integrated, the rest are only dummy styles
+.teaserOffer--badge {
+	position: absolute;
+	right: 10px;
+	top: 10px;
+}
+
+.teaserOffer--content,
+.teaserOffer--btnContainer {
+	border: 1px solid $gray-light;
+	padding: 15px;
+}
+
+.teaserOffer--content {
+	border-top: none;
+	padding-top: 30px;
+}
+
+.teaserOffer--title {
+	text-transform: uppercase;
+	color: $gray-dark-text;
+	font-size: $headline-font-size;
+}
+
+.teaserOffer--copy {
+
+}
+
+.teaserOffer--btnContainer {
+	background: $gray-light;
+}
+
+.teaserOffer--btn {
+
+}
+
+
+
+
+

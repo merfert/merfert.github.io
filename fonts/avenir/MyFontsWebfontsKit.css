@@ -1,0 +1,52 @@
+/**
+ * @license
+ * MyFonts Webfont Build ID 3630649, 2018-08-29T09:45:12-0400
+ * 
+ * The fonts listed in this notice are subject to the End User License
+ * Agreement(s) entered into by the website owner. All other parties are 
+ * explicitly restricted from using the Licensed Webfonts(s).
+ * 
+ * You may obtain a valid license at the URLs below.
+ * 
+ * Webfont: AvenirNextLTPro-Cn by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir-next-pro/avenira-next-pro-condensed/
+ * Copyright: Copyright &#x00A9; 2004 - 2017 Monotype GmbH. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: AvenirNextLTPro-DemiCn by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir-next-pro/pro-condensed-demi/
+ * Copyright: Copyright &#x00A9; 2004 - 2017 Monotype GmbH. All rights reserved.
+ * Licensed pageviews: 500,000
+ * 
+ * Webfont: AvenirLTPro-Book by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-45-book/
+ * Copyright: Copyright &#x00A9; 2014 Monotype GmbH. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * Webfont: AvenirLTPro-Black by Linotype
+ * URL: https://www.myfonts.com/fonts/linotype/avenir/pro-95-black/
+ * Copyright: Copyright &#x00A9; 2014 Monotype GmbH. All rights reserved.
+ * Licensed pageviews: 250,000
+ * 
+ * 
+ * License: https://www.myfonts.com/viewlicense?type=web&buildid=3630649
+ * 
+ * © 2018 MyFonts Inc
+*/
+
+
+/* @import must be at top of file, otherwise CSS will not work */
+@import url("//hello.myfonts.net/count/376639");
+
+  
+@font-face {font-family: 'AvenirNextLTPro-Cn';src: url('webfonts/376639_0_0.eot');src: url('webfonts/376639_0_0.eot?#iefix') format('embedded-opentype'),url('webfonts/376639_0_0.woff2') format('woff2'),url('webfonts/376639_0_0.woff') format('woff'),url('webfonts/376639_0_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirNextLTPro-DemiCn';src: url('webfonts/376639_1_0.eot');src: url('webfonts/376639_1_0.eot?#iefix') format('embedded-opentype'),url('webfonts/376639_1_0.woff2') format('woff2'),url('webfonts/376639_1_0.woff') format('woff'),url('webfonts/376639_1_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-Book';src: url('webfonts/376639_2_0.eot');src: url('webfonts/376639_2_0.eot?#iefix') format('embedded-opentype'),url('webfonts/376639_2_0.woff2') format('woff2'),url('webfonts/376639_2_0.woff') format('woff'),url('webfonts/376639_2_0.ttf') format('truetype');}
+ 
+  
+@font-face {font-family: 'AvenirLTPro-Black';src: url('webfonts/376639_3_0.eot');src: url('webfonts/376639_3_0.eot?#iefix') format('embedded-opentype'),url('webfonts/376639_3_0.woff2') format('woff2'),url('webfonts/376639_3_0.woff') format('woff'),url('webfonts/376639_3_0.ttf') format('truetype');}
+ 

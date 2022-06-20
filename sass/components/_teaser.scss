@@ -1,0 +1,99 @@
+// Dummy Teaser
+
+.teaser {
+	font-family: $font-family-base;
+	background: url(../images/teaser-bg.jpg);
+	background-size: cover;
+	padding: 100px 0;
+	min-height: 600px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-bottom: 50px;
+	.btn-primary {
+		margin-top: 10px;
+		box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.2);
+	}
+}
+
+.teaser--container {
+	@media (min-width: 1200px) {
+		padding: 0 50px;
+	}
+}
+
+.teaser--containerInner {
+	position: relative;
+}
+.teaser--subtitle,
+.teaser--title {
+	color: $white;
+	text-shadow: $text-shadow-1;
+}
+
+.teaser--subtitle {
+
+}
+
+.teaser--title {
+	font-family: $font-family-bold;
+	font-size: $jumbo-font-size;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	
+	// IMPORANT:
+	// Space for Badge needs to be integrated, the rest are only dummy styles
+	@media (min-width: 990px) {
+		padding-right: 320px;
+	}
+}
+
+
+// IMPORANT:
+// Badge position needs to be integrated, the rest are only dummy styles
+.teaser--badge {
+	position: absolute;
+	top: -10px;
+	right: 0;
+    transform: translateY(-100%);
+    @media (min-width: 990px) {
+		top: 0;
+		transform: translateY(-40%);
+	}
+	// hide large badge on small devices except of nested badge
+	> .badge-large:not(.has-badge) {
+		@media (max-width: 989px) {
+			display: none;
+		}
+	}
+}
+
+
+// Teaser Variants
+
+.teaserVariants {
+
+}
+
+.teaserVariants--title {
+
+}
+
+.teaserVariants--row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 50px;
+	> * {
+		margin: 25px;
+		&.badge-small {
+			margin: 10px;
+		}
+		&:first-child:not(.badge-small) {
+			margin-left: 0;
+		}
+		&:last-child:not(.badge-small) {
+			margin-right: 0;
+		}
+	}
+}

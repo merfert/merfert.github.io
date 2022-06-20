@@ -1,0 +1,17 @@
+body {
+	font-family: $font-family-bold;
+	color: $black;
+}
+
+.container {
+	@media (min-width: 1200px) {
+    	max-width: 1400px;
+    }
+}
+
+.btn-primary {
+	padding: .7rem 2rem .5rem;
+	background-color: $secondary;
+	border-color: $secondary;
+	font-family: $font-family-base;
+}
