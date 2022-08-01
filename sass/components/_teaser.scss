@@ -4,15 +4,25 @@
 	font-family: $font-family-base;
 	background: url(../images/teaser-bg.jpg);
 	background-size: cover;
-	padding: 100px 0;
-	min-height: 600px;
+	padding: 32px 0;
+	min-height: 132.54vw; // maintain image aspect ratio
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	margin-bottom: 50px;
-	.btn-primary {
-		margin-top: 10px;
-		box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.2);
+	position: relative;
+	@media (min-width: 420px) {
+		padding: 60px 0;
+	}
+	@media (min-width: 990px) {
+		padding: 100px 0;
+		min-height: 36.18vw; // maintain image aspect ratio
+	}
+
+	&.has-badge-large {
+		@media (max-width: 570px) {
+			align-items: flex-end; // place text on bottom to save space for badge on small devices
+		}
 	}
 }
 
@@ -23,7 +33,9 @@
 }
 
 .teaser--containerInner {
-	position: relative;
+	@media (min-width: 1200px) {
+		position: relative; // To position badge relative to containerInner
+	}
 }
 .teaser--subtitle,
 .teaser--title {
@@ -32,19 +44,43 @@
 }
 
 .teaser--subtitle {
+	font-size: $font-size-h5;
 
+	@media (min-width: 768px) {
+		font-size: $font-size-h4;
+	}
+
+	@media (min-width: 990px) {
+		font-size: $font-size-h3;
+	}
 }
 
 .teaser--title {
 	font-family: $font-family-bold;
-	font-size: $jumbo-font-size;
+	font-size: $font-size-h3;
 	text-transform: uppercase;
-	letter-spacing: 5px;
-	
+	letter-spacing: 3px;
+
 	// IMPORANT:
 	// Space for Badge needs to be integrated, the rest are only dummy styles
+	@media (min-width: 768px) {
+		font-size: $font-size-h2;
+	}
+
 	@media (min-width: 990px) {
 		padding-right: 320px;
+		font-size: $font-size-h1;
+		letter-spacing: 5px;
+	}
+}
+
+.teaser--btn {
+	margin-top: 10px;
+	box-shadow: 0px 3px 13px rgba(0, 0, 0, 0.2);
+
+	@media (max-width: 767px) {
+		font-size: $font-size-h5;
+		padding: 9px 16px 6px;
 	}
 }
 
@@ -53,18 +89,11 @@
 // Badge position needs to be integrated, the rest are only dummy styles
 .teaser--badge {
 	position: absolute;
-	top: -10px;
-	right: 0;
-    transform: translateY(-100%);
-    @media (min-width: 990px) {
+	top: 16px;
+	right: 16px;
+    @media (min-width: 1200px) {
 		top: 0;
 		transform: translateY(-40%);
-	}
-	// hide large badge on small devices except of nested badge
-	> .badge-large:not(.has-badge) {
-		@media (max-width: 989px) {
-			display: none;
-		}
 	}
 }
 
