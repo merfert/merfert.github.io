@@ -95,6 +95,13 @@
 		top: 0;
 		transform: translateY(-40%);
 	}
+	@media (max-width: 450px) {
+		transform: scale(.8);
+		transform-origin: right top;
+	}
+	@media (max-width: 380px) {
+		transform: scale(.75);
+	}
 }
 
 
